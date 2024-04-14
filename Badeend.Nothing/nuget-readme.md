@@ -28,7 +28,7 @@ public class MyHandler : IHandler<void> // COMPILE ERROR!
 }
 ```
 
-But "Computer Says No". C# won't let you.
+Unfortunately, "Computer Says No". C# won't let you.
 
 If you're lucky enough to own that interface, you could decide to duplicate the interface and all related code: one for `IHandler`, and one for `IHandler<T>`.
 
