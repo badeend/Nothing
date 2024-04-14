@@ -86,6 +86,6 @@ or:
 
 May I interest you in one of my other packages?
 
-- <b>[Badeend.ValueCollections](https://badeend.github.io/ValueCollections/)</b>: <em>Low overhead immutable collection types with structural equality.</em>
-- <b>[Badeend.Result](https://badeend.github.io/Result/)</b>: <em>For failures that are not exceptional: `Result<T,E>` for C#.</em>
-- <b>[Badeend.Nothing](https://github.com/badeend/Nothing)</b>: <em>If you want to use `void` as a type parameter, but C# won't let you.</em>
+- **[Badeend.ValueCollections](https://badeend.github.io/ValueCollections/)**: _Low overhead immutable collection types with structural equality._
+- **[Badeend.Result](https://badeend.github.io/Result/)**: _For failures that are not exceptional: `Result<T,E>` for C#._
+- **[Badeend.Nothing](https://github.com/badeend/Nothing)**: _If you want to use `void` as a type parameter, but C# won't let you._
