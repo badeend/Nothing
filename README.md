@@ -61,6 +61,14 @@ public class MyHandler : IHandler<Nothing> // <--- Nothing to see here
 }
 ```
 
+## Installation
+
+[![NuGet Badeend.Nothing](https://img.shields.io/nuget/v/Badeend.Nothing?label=Badeend.Nothing)](https://www.nuget.org/packages/Badeend.Nothing)
+
+```sh
+dotnet add package Badeend.Nothing
+```
+
 ## Fake `nothing` keyword
 
 Depending on how intensively you this package you might be interested in using `Badeend.Globals.NothingKeyword`, which exposes `nothing` as a top level field.
