@@ -50,7 +50,7 @@ public class MyHandler : IHandler<Nothing> // <--- Nothing to see here
 
 ## Fake `nothing` keyword
 
-Depending on how intensively you this package you might be interested in using `Badeend.Globals.NothingKeyword`, which exposes `nothing` as a top level field.
+Depending on how intensively you use this package, you might be interested in using `Badeend.Globals.NothingKeyword`, which exposes `nothing` as a top level field.
 
 ```cs
 using Badeend;
@@ -66,7 +66,7 @@ public class MyHandler : IHandler<Nothing>
 }
 ```
 
-In C#10+ this can be configured as follows:
+In [C#10+](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive#global-modifier) this can be configured as follows:
 
 ```cs
 global using static Badeend.Globals.NothingKeyword;
