@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Contracts;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -85,4 +86,17 @@ public readonly struct Nothing : IEquatable<Nothing>, IComparable<Nothing>, ICom
 		Nothing => 0,
 		_ => throw new ArgumentException("Comparison with incompatible type", nameof(other)),
 	};
+
+	/// <summary>
+	/// Contains the `nothing` field.
+	/// </summary>
+	public static class Keyword
+	{
+		/// <summary>
+		/// The one and only <see cref="Nothing"><c>nothing</c></see> value.
+		/// </summary>
+		[SuppressMessage("StyleCop.CSharp.NamingRules", "SA1307:Accessible fields should begin with upper-case letter", Justification = "On purpose, to avoid ambiguity with the type name.")]
+		[SuppressMessage("StyleCop.CSharp.NamingRules", "SA1311:Static readonly fields should begin with upper-case letter", Justification = "On purpose, to avoid ambiguity with the type name.")]
+		public static readonly Nothing nothing = default;
+	}
 }

@@ -1,2 +1,2 @@
 global using Xunit;
-global using static Badeend.Globals.NothingKeyword;
+global using static Badeend.Nothing.Keyword;
