@@ -1,7 +1,6 @@
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Contracts;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace Badeend;
@@ -13,17 +12,10 @@ namespace Badeend;
 [StructLayout(LayoutKind.Auto)]
 public readonly struct Nothing : IEquatable<Nothing>, IComparable<Nothing>, IComparable
 {
-	private static readonly Nothing Singleton = default;
-
 	/// <summary>
 	/// The one and only <see cref="Nothing"><c>nothing</c></see> value.
 	/// </summary>
-	[Pure]
-	public static ref readonly Nothing Value
-	{
-		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		get => ref Singleton;
-	}
+	public static readonly Nothing Value = default;
 
 	/// <summary>
 	/// Returns an empty string.
